@@ -1,0 +1,11 @@
+@import url('./css/reset.css');
+@import url('./css/main.css');
+@import url('./css/variables.css');
+@import url('./css/font.css');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
