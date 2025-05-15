@@ -1,10 +1,32 @@
 @font-face {
-  font-family: "Poppins";
-  src: local("Poppins Medium"), local("Poppins-Medium"),
+  font-family: "Inter";
+  src: local("Inter Regular"), local("Inter-Regular"),
+    url("Poppins-Regular.woff2") format("woff2"),
+    url("Poppins-Regular.woff") format("woff"),
+    url("../fonts/inter/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Medium"), local("Inter-Medium"),
     url("Poppins-Medium.woff2") format("woff2"),
     url("Poppins-Medium.woff") format("woff"),
-    url("Poppins-Medium.ttf") format("truetype");
+    url("../fonts/inter/Inter_18pt-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter SemiBold"), local("Inter-SemiBold"),
+    url("Poppins-SemiBold.woff2") format("woff2"),
+    url("Poppins-SemiBold.woff") format("woff"),
+    url("../fonts/inter/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
