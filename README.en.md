@@ -74,4 +74,4 @@ Free to use and modify.
 
 ## Contact
 
-If you have questions or suggestions, contact: your@email.com
+If you have questions or suggestions, contact: kapillarua@gmail.com
