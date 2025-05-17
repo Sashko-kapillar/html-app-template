@@ -1,0 +1,58 @@
+:root {
+  /*шрифти*/
+  --font-family: "Inter", sans-serif;
+  --second-family: "Name", sans-serif;
+  --third-family: "Name", sans-serif;
+  --font-size-base: 16px;
+  --font-size-h1: 2.5rem;
+  --line-height-base: 1.5;
+
+  /* Кольори */
+  --black: #292929;
+  --error: #e74a3b;
+
+  /* Shadows */
+  --box-shadow-xl: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  /* Тіні */
+  --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --box-shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+
+  /* Відступи та поля */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+  --section-padding: 3rem 0;
+
+  /* Брейкпойнти (Media Query Breakpoints) */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  /* Радіуси заокруглення */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 1rem;
+  --border-radius-pill: 50rem; /* Для круглих елементів */
+
+  /* Тривалості анімацій та переходів */
+  --duration-fast: 0.15s;
+  --duration-normal: 0.3s;
+  --duration-slow: 0.5s;
+  --transition-default: all var(--duration-normal) ease-in-out;
+
+  /* Значення z-index */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-modal: 1050;
+  --z-index-tooltip: 1080;
+
+  /* Ширина контейнера (якщо використовується фіксована ширина) */
+  --container-width: 1140px;
+  --container-padding: 1rem;
+
+  /* Інші специфічні для проєкту значення */
+  --header-height: 60px;
+  --footer-padding: 2rem 0;
+}
