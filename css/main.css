@@ -1,13 +1,19 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  padding: 20px;
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
+  font-family: var(--font3), sans-serif;
+  color: var(--black);
+  background-color: var(--color);
+
+  /* Відступи безпеки */
   padding-top: env(safe-area-inset-top);
   padding-right: env(safe-area-inset-right);
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
+
+  /* Резервується місце для вертикальної смуги прокрутки */
+  scrollbar-gutter: stable;
 }
