@@ -47,12 +47,4 @@
   --z-index-sticky: 1020;
   --z-index-modal: 1050;
   --z-index-tooltip: 1080;
-
-  /* Ширина контейнера (якщо використовується фіксована ширина) */
-  --container-width: 1140px;
-  --container-padding: 1rem;
-
-  /* Інші специфічні для проєкту значення */
-  --header-height: 60px;
-  --footer-padding: 2rem 0;
 }
