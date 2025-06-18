@@ -3,7 +3,9 @@
 /* =============================
    1. Global Box-Sizing
 ============================= */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /* Makes element width and height include padding and border */
@@ -11,13 +13,31 @@
 /* =============================
    2. Margin & Padding Reset
 ============================= */
-body, h1, h2, h3, h4, h5, h6,
-p, ul, ol, li,
-figure, figcaption,
-blockquote, dl, dd,
-fieldset, legend,
-table, th, td,
-input, textarea, select, button {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+fieldset,
+legend,
+table,
+th,
+td,
+input,
+textarea,
+select,
+button {
   margin: 0;
   padding: 0;
 }
@@ -49,7 +69,11 @@ body {
 /* =============================
    4. Media Elements
 ============================= */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
@@ -86,7 +110,7 @@ a {
 /* Removes underlines and ensures inherited color */
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  color: currentColor; 
+  color: currentColor;
 }
 
 /* =============================
@@ -98,7 +122,8 @@ table {
 }
 /* Removes spacing between table cells */
 
-th, td {
+th,
+td {
   text-align: left;
   vertical-align: top;
 }
@@ -107,7 +132,10 @@ th, td {
 /* =============================
    8. Forms & Inputs
 ============================= */
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font: inherit;
   color: inherit;
   background-color: transparent;
@@ -165,4 +193,3 @@ legend {
   outline: none;
 }
 /* Avoids showing outlines on mouse interaction */
-
