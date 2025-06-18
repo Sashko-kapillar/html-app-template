@@ -1,53 +1,168 @@
-/* ========== RESET ========== */
-*,
-*::before,
-*::after {
+/* Custom CSS Reset */
+
+/* =============================
+   1. Global Box-Sizing
+============================= */
+*, *::before, *::after {
   box-sizing: border-box;
 }
+/* Makes element width and height include padding and border */
 
-html, body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+/* =============================
+   2. Margin & Padding Reset
+============================= */
+body, h1, h2, h3, h4, h5, h6,
+p, ul, ol, li,
+figure, figcaption,
+blockquote, dl, dd,
+fieldset, legend,
+table, th, td,
+input, textarea, select, button {
   margin: 0;
   padding: 0;
-  scrollbar-gutter: stable;
 }
+/* Removes default spacing from common block elements and form controls */
 
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
+/* =============================
+   3. Base HTML & Body
+============================= */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
-
-/* Стилі для навігації */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
+/* Improves text readability and font rendering */
 
 body {
-  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  scrollbar-gutter: stable;
+  color: inherit;
+  background-color: #fff;
+  min-height: 100vh; /* Корисно для "липкого" футера */
+}
+/* Establishes consistent font defaults */
+
+/* =============================
+   4. Media Elements
+============================= */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Makes media elements responsive and avoids overflow */
+
+svg {
+  fill: currentColor;
+}
+/* Inherits text color for SVG by default */
+
+/* =============================
+   5. Lists
+============================= */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
+ul,
+ol {
+  list-style: none;
+  display: flex;
+}
+/* Removes bullets and numbers */
+
+/* =============================
+   6. Links
+============================= */
 a {
   text-decoration: none;
   color: inherit;
 }
-
-img,
-picture {
-  max-width: 100%;
-  display: block;
+/* Removes underlines and ensures inherited color */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor; 
 }
 
-button,
-input,
-select,
-textarea {
+/* =============================
+   7. Tables
+============================= */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Removes spacing between table cells */
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+}
+/* Sets default table alignment */
+
+/* =============================
+   8. Forms & Inputs
+============================= */
+button, input, select, textarea {
   font: inherit;
+  color: inherit;
+  background-color: transparent;
   border: none;
-  background: none;
+}
+/* Makes form controls inherit font and color */
+
+button {
+  cursor: pointer;
+}
+/* Applies pointer cursor to buttons */
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+}
+/* Enables vertical resizing and scroll on textareas */
+
+/* =============================
+   9. Others
+============================= */
+hr {
+  height: 0;
+  color: inherit;
+  border: none;
+  border-top: 1px solid currentColor;
+}
+/* Normalizes horizontal rule styling */
+
+fieldset {
+  border: none;
+}
+/* Removes border from fieldset */
+
+legend {
+  padding: 0;
+}
+/* Removes default padding on legends */
+
+[hidden] {
+  display: none !important;
+}
+/* Hides elements with the hidden attribute */
+
+/* =============================
+   10. Focus (Accessibility)
+============================= */
+:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+/* Applies outline only during keyboard navigation */
+
+:focus:not(:focus-visible) {
   outline: none;
 }
+/* Avoids showing outlines on mouse interaction */
+

@@ -1,92 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Основні мета-теги -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Short description of the page for search engines." />
-  <meta name="keywords" content="keyword1, keyword2, keyword3" />
-  <meta name="author" content="Your Name" />
+  <head>
+    <!-- Основні мета-теги -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Short description of the page for search engines."
+    />
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta name="author" content="Your Name" />
 
-  <!-- мета-тег для robots -->
-  <meta name="robots" content="index, follow" />
+    <!-- мета-тег для robots -->
+    <meta name="robots" content="index, follow" />
 
-  <!-- Назва сторінки -->
-  <title>My Web App</title>
+    <!-- Назва сторінки -->
+    <title>My Web App</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./favicon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png" />
 
-  <!-- Normalize (можна замінити на свій Reset) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    <!-- Основний CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="preload"
+      href="/fonts/inter/Inter_18pt-SemiBold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
 
-  <!-- Основний CSS -->
-  <link rel="stylesheet" href="./css/style.css" />
-
-  <!-- Open Graph для соцмереж -->
-  <meta property="og:title" content="My Web App" />
-  <meta property="og:description" content="A modern web application starter template." />
-  <meta property="og:image" content="https://example.com/img/preview.jpg" />
-  <meta property="og:url" content="https://example.com/" />
-  <meta name="twitter:card" content="summary_large_image" />
-</head>
-<body>
-  <!-- Хедер -->
-  <header class="header" role="banner">
-    <div class="container">
-      <nav role="navigation">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Основний контент -->
-  <main class="main" role="main">
-    <section class="hero" role="banner">
+    <!-- Open Graph для соцмереж -->
+    <meta property="og:title" content="My Web App" />
+    <meta
+      property="og:description"
+      content="A modern web application starter template."
+    />
+    <meta property="og:image" content="https://example.com/img/preview.jpg" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <!-- Хедер -->
+    <header class="header" role="banner">
       <div class="container">
-        <h1>Audits, Reviews, and Compilations for CA’s</h1>
-        <p>Your modern web application starts here.</p>
-        <a href="#features" class="btn">Learn More</a>
+        <nav role="navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
-    <section id="about" class="section">
+    </header>
+
+    <!-- Основний контент -->
+    <main class="main" role="main">
+      <section class="hero" role="banner">
+        <div class="container">
+          <h1>Audits, Reviews, and Compilations for CA’s</h1>
+          <p>Your modern web application starts here.</p>
+          <a href="#features" class="btn">Learn More</a>
+        </div>
+      </section>
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            This is a modern, semantic, and accessible HTML template for your
+            web application.
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2>Features</h2>
+          <ul>
+            <li>Modern markup</li>
+            <li>Responsive design</li>
+            <li>Ready for JavaScript modules</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer" role="contentinfo">
       <div class="container">
-        <h2>About</h2>
-        <p>This is a modern, semantic, and accessible HTML template for your web application.</p>
+        <p>© 2025 Your Name. All rights reserved.</p>
+        <p>Contact: <a href="mailto:your@email.com">your@email.com</a></p>
       </div>
-    </section>
+    </footer>
 
-    <section id="features" class="section">
-      <div class="container">
-        <h2>Features</h2>
-        <ul>
-          <li>Modern markup</li>
-          <li>Responsive design</li>
-          <li>Ready for JavaScript modules</li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <!-- Футер -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <p>© 2025 Your Name. All rights reserved.</p>
-      <p>Contact: <a href="mailto:your@email.com">your@email.com</a></p>
-    </div>
-  </footer>
-
-  <!-- Основний скрипт -->
-  <script type="module" src="./js/script.js"></script>
-</body>
+    <!-- Основний скрипт -->
+    <script type="module" src="./js/script.js"></script>
+  </body>
 </html>

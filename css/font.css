@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Inter";
-  src: local("Inter Regular"), local("Inter-Regular"),
-    url("Poppins-Regular.woff2") format("woff2"),
-    url("Poppins-Regular.woff") format("woff"),
+  src: local("Inter_18pt-Regular"),
     url("../fonts/inter/Inter_18pt-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -11,9 +9,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter Medium"), local("Inter-Medium"),
-    url("Poppins-Medium.woff2") format("woff2"),
-    url("Poppins-Medium.woff") format("woff"),
+  src: local("Inter_18pt-Medium"),
     url("../fonts/inter/Inter_18pt-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -22,9 +18,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter SemiBold"), local("Inter-SemiBold"),
-    url("Poppins-SemiBold.woff2") format("woff2"),
-    url("Poppins-SemiBold.woff") format("woff"),
+  src: local("Inter_18pt-SemiBold"),
     url("../fonts/inter/Inter_18pt-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;

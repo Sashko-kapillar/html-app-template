@@ -1,28 +1,10 @@
 html {
   scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  font-family: "Poppins", sans-serif;
-  /* Забезпечує кращу читабельність тексту */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* Встановлює базовий шрифт для всього документа */
-  font-family: var(--font-family);
-  /* Встановлює базовий розмір шрифту */
-  font-size: var(--font-size-base);
-  /* Встановлює базову висоту рядка */
-  line-height: var(--line-height-base);
-  /* Встановлює колір тексту */
-  color: var(--gren-gray-scale-900);
-  /* Встановлює колір фону */
-  background-color: var(--gray-scale-white);
-  /* Забезпечує плавну прокрутку */
-  scroll-behavior: smooth;
-  /* Резервується місце для вертикальної смуги прокрутки */
-  scrollbar-gutter: stable;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 /* Стилі для приховання елементів */
